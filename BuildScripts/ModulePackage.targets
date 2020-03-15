@@ -56,15 +56,15 @@
 
     <!-- Get resource files -->
     <ItemGroup>
-      <Module-Resources Include="App_LocalResources/*.resx" />
+      <Module-Resources Include="**/*.resx" />
       <Module-Controls Include="*.ascx" />
-      <Resources Include="@(Module-Resources);@(Module-Controls)" />
+      <Module-Styles Include="*.css" />
+      <Resources Include="@(Module-Resources);@(Module-Controls);@(Module-Styles);" />
     </ItemGroup>
 
     <!-- Copy the resource files -->
     <Message Text="Copying Resources" Importance="High" />
-    <Copy SourceFiles="@(Module-Resources)" DestinationFolder="$(DeployFolder)\App_LocalResources" />
-    <Copy SourceFiles="@(Module-Controls)" DestinationFolder="$(DeployFolder)" />
+    <Copy SourceFiles="@(Resources)" DestinationFolder="$(DeployFolder)\%(RecursiveDir)" />
 
     <!-- Get the symbols -->
     <ItemGroup>
@@ -87,9 +87,9 @@
     <!-- Copy the install files -->
     <Message Text="Copying Install files" Importance="high" />
     <ItemGroup>
-      <InstallFiles Include="**\*.dnn" />
+      <InstallFiles Include="**\*.dnn" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
       <InstallFiles Include="**\*.txt" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <InstallFiles Include="**\*.SqlDataProvider" />
+      <InstallFiles Include="**\*.SqlDataProvider" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
     </ItemGroup>
     <Copy SourceFiles="@(InstallFiles)" DestinationFolder="$(DeployFolder)\%(RecursiveDir)" />
 

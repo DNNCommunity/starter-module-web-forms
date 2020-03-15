@@ -136,6 +136,7 @@
     <None Include="License.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="module.css" />
     <Content Include="Settings.ascx" />
     <Content Include="View.ascx" />
   </ItemGroup>
