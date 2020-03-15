@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/LICENSE-MIT-informational.svg)](https://opensource.org/licenses/MIT)
 
-**starter-module-web-forms** is a Web Forms module starter project for DNN Platform (formerly known as DotNetNuke).
+**starter-module-web-forms** is a Web Forms module starter project for [DNN Platform](https://github.com/dnnsoftware/Dnn.Platform) (formerly known as DotNetNuke) made by and for the [DNN Community](https://dnncommunity.org).
 
 ## Installation
 
@@ -34,7 +34,7 @@ npm install -g @dnncommunity/dnn-cli
 ```
 ---
 
-Once you have **dnn-cli** installed install this starter project into a directory of your choice.
+Once **dnn-cli** is installed, this starter project can be installed into a directory of your choice.
 
 ```bash
 dnn module web-forms
