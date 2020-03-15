@@ -122,6 +122,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <None Include="App_LocalResources\Settings.ascx.resx">
       <SubType>Designer</SubType>
     </None>
