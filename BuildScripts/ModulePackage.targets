@@ -30,7 +30,7 @@
       <DefaultExclude Include="**\Test\**" />
       <DefaultExclude Include="**\TestResults\**" />
       <DefaultExclude Include="**\doc\**" />
-      <DefaultExclude Include="**\www\**" />
+      <DefaultExclude Include="**\Website\**" />
       <DefaultExclude Include="**\*.user" />
       <DefaultExclude Include="**\*.suo" />
       <DefaultExclude Include="**\*.zip" />
@@ -118,16 +118,16 @@
 
     <!-- Get the resource files -->
     <ItemGroup>
-      <ResourceFiles Include="*.ascx" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.js" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.css" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.gif" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.jpg" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.jpeg" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.png" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.svg" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <ResourceFiles Include="**\*.resx" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;"/>
-      <ResourceFiles Include="**\*.resources" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;"/>
+      <ResourceFiles Include="*.ascx" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.js" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.css" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.gif" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.jpg" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.jpeg" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.png" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.svg" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.resx" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <ResourceFiles Include="**\*.resources" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
     </ItemGroup>
 
     <!-- Copy the resource files -->
@@ -169,9 +169,9 @@
     <!-- Copy the install files -->
     <Message Text="Copying Install files" Importance="high" />
     <ItemGroup>
-      <InstallFiles Include="**\*.dnn" />
-      <InstallFiles Include="**\*.txt" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;" />
-      <InstallFiles Include="**\*.SqlDataProvider" />
+      <InstallFiles Include="**\*.dnn" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <InstallFiles Include="**\*.txt" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
+      <InstallFiles Include="**\*.SqlDataProvider" Exclude="packages\**;**\obj\**;**\_ReSharper*\**;Website\**;" />
     </ItemGroup>
     <Copy SourceFiles="@(InstallFiles)" DestinationFolder="$(PackageInstallFolder)\%(RecursiveDir)" />
 

@@ -20,12 +20,12 @@
           <scripts>
             <basePath>DesktopModules\starter-module-web-forms</basePath>
             <script type="Install">
-              <path>SqlDataProviderFiles</path>
+              <path>Providers\DataProviders\SqlDataProvider</path>
               <name>00.00.01.SqlDataProvider</name>
               <version>00.00.01</version>
             </script>
             <script type="UnInstall">
-              <path>SqlDataProviderFiles</path>
+              <path>Providers\DataProviders\SqlDataProvider</path>
               <name>Uninstall.SqlDataProvider</name>
               <version>00.00.01</version>
             </script>
