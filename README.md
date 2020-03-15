@@ -19,7 +19,7 @@ git clone https://github.com/DNNCommunity/starter-module-web-forms.git .
 Use **dnn-cli**, which is [available as an npm package](https://www.npmjs.com/package/@dnncommunity/dnn-cli).  **dnn-cli** it can be installed via **yarn** or **npm**.
 
 ---
-#### Install dnn-cli,,,
+#### Install dnn-cli...
 
 ...via **yarn**:
 
