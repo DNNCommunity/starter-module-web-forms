@@ -129,9 +129,9 @@
     <None Include="App_LocalResources\View.ascx.resx" />
     <None Include="BuildScripts\ModulePackage.targets" />
     <None Include="packages.config" />
-    <None Include="SqlDataProviderFiles\00.00.01.SqlDataProvider" />
+    <None Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
     <None Include="starter-module-web-forms.dnn" />
-    <None Include="SqlDataProviderFiles\Uninstall.SqlDataProvider" />
+    <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
     <None Include="ReleaseNotes.txt" />
     <None Include="License.txt" />
   </ItemGroup>
