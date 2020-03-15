@@ -34,9 +34,10 @@ npm install -g @dnncommunity/dnn-cli
 ```
 ---
 
-Once **dnn-cli** is installed, this starter project can be installed into a directory of your choice.
+Once **dnn-cli** is installed, this starter project can be installed into an empty directory of your choice.
 
 ```bash
+cd <directory path>
 dnn module web-forms
 ```
 
