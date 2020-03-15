@@ -10,8 +10,8 @@
         <url>https://dnncommunity.org</url>
         <email></email>
       </owner>
-      <license src="ManifestAssets\License.txt"></license>
-      <releaseNotes src="ManifestAssets\ReleaseNotes.txt"></releaseNotes>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
       <dependencies>
         <dependency type="CoreVersion">09.05.00</dependency>
       </dependencies>

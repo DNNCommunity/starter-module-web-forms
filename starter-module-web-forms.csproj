@@ -132,8 +132,8 @@
     <None Include="SqlDataProviderFiles\00.00.01.SqlDataProvider" />
     <None Include="starter-module-web-forms.dnn" />
     <None Include="SqlDataProviderFiles\Uninstall.SqlDataProvider" />
-    <None Include="ManifestAssets\ReleaseNotes.txt" />
-    <None Include="ManifestAssets\License.txt" />
+    <None Include="ReleaseNotes.txt" />
+    <None Include="License.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Settings.ascx" />
