@@ -130,6 +130,7 @@
     <None Include="BuildScripts\ModulePackage.targets" />
     <None Include="packages.config" />
     <None Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
+    <Content Include="README.md" />
     <None Include="starter-module-web-forms.dnn" />
     <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
     <None Include="ReleaseNotes.txt" />
