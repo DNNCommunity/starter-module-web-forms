@@ -57,19 +57,13 @@
     <!-- Get resource files -->
     <ItemGroup>
       <Module-Resources Include="App_LocalResources/*.resx" />
-      <Module-Images Include="Images/**/*" />
-      <Module-Scripts Include="Scripts/**/*" />
-      <Module-Styles Include="Styles/**/*" />
       <Module-Controls Include="*.ascx" />
-      <Resources Include="@(Module-Resources);@(Module-Images);@(Module-Scripts);@(Module-Styles);@(Module-Controls)" />
+      <Resources Include="@(Module-Resources);@(Module-Controls)" />
     </ItemGroup>
 
     <!-- Copy the resource files -->
     <Message Text="Copying Resources" Importance="High" />
     <Copy SourceFiles="@(Module-Resources)" DestinationFolder="$(DeployFolder)\App_LocalResources" />
-    <Copy SourceFiles="@(Module-Images)" DestinationFolder="$(DeployFolder)\Images" />
-    <Copy SourceFiles="@(Module-Scripts)" DestinationFolder="$(DeployFolder)\Scripts" />
-    <Copy SourceFiles="@(Module-Styles)" DestinationFolder="$(DeployFolder)\Styles" />
     <Copy SourceFiles="@(Module-Controls)" DestinationFolder="$(DeployFolder)" />
 
     <!-- Get the symbols -->
