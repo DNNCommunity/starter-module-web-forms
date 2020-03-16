@@ -154,19 +154,19 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <PropertyGroup>
-    <Extension>zip</Extension>
-    <DNNFileName>starter_module_web_forms</DNNFileName>
-    <MSBuildCommunityTasksPath>BuildScripts</MSBuildCommunityTasksPath>
-  </PropertyGroup>
-  <Import Project="BuildScripts\ModulePackage.Targets" />
-  <Target Name="AfterBuild" DependsOnTargets="DeployModule;PackageModule">
-  </Target>
   <Import Project="packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
+  </Target>
+  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <PropertyGroup>
+    <Extension>zip</Extension>
+    <DNNFileName>starter_module_web_forms</DNNFileName>
+    <MSBuildCommunityTasksPath>BuildScripts</MSBuildCommunityTasksPath>
+  </PropertyGroup>
+  <Target Name="AfterBuild" DependsOnTargets="DeployModule;PackageModule">
   </Target>
 </Project>
